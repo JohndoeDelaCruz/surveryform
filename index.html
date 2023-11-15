@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <p>Information</p>
+            <label id="name-label">Name<input id="name" placeholder="Name" type="text" required></label>
+            <label id="email-label">Email<input id="email" placeholder="example@gmail.com" type="email" required></label>
+            <label id="number-label">Age<input id="number" placeholder="Age" type="number" min="0" max="100" required></label>
+            <label for="dropdown">What Programming Language are you good at?
+                <select name="dropdown" id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Python</option>
+                    <option value="2">C#</option>
+                    <option value="3">PHP</option>
+                    <option value="4">Java Script</option>
+                    <option value="5">C++</option>
+                    <option value="6">Java</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Employment Status</p>
+            <label for="employment-fulltime"><input id="employment-fulltime" type="radio" name="employment-type" class="radio-inline" value="employed" checked /> Full-time job</label>
+            <label for="employment-parttime"><input id="employment-parttime" type="radio" name="employment-type" class="radio-inline" value="freelancer" /> Part-time job</label>
+            <label for="employment-lookingjob"><input id="employment-lookingjob" type="radio" name="employment-type" class="radio-inline" value="applier" /> Looking for a job</label>
+            <label for="employment-student"><input id="employment-student" type="radio" name="employment-type" class="radio-inline" value="unemployed" /> I am a student</label>
+        </fieldset>
+        <fieldset>
+            <p>Operating System</p>
+            <label for="operating-windows"><input id="operating-windows" type="checkbox" name="operation-type" value="windows-os" checked>I am experienced with Windows-OS</label>
+            <label for="operating-linux"><input id="operating-linux" type="checkbox" name="operation-type" value="linux-os">I am experienced with Linux-OS</label>
+            <label for="operating-mac"><input id="operating-mac" type="checkbox" name="operation-type" value="mac-os">I am experienced with Mac-OS</label>
+        </fieldset>
+        <fieldset>
+            <p>Any Suggestions?</p>
+            <label id="comments-label">Do you have any suggestion about this survey?</label>
+            <textarea style="height:50px;" class="form" placeholder="Please feel free to write a review"></textarea>
+            <input id="submit" type="submit" class="form">
+        </fieldset>
+    </form>
+</body>
+</html>
